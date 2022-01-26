@@ -1,12 +1,7 @@
-import { Fragment } from "react";
+import PostContent from "../../components/posts/post-detail/post-content";
 
-function PostDetailsPage() {
-  return (
-    <Fragment>
-      <Hero />
-      <FeaturedPost />
-    </Fragment>
-  );
+function PostDetailsPage(props) {
+  return <PostContent post={props.post} />;
 }
 export default PostDetailsPage;
 /*
